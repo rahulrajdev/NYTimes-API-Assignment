@@ -6,8 +6,8 @@ function searchArticles() {
   var searchTerm = $(this).attr("data-name");
   var queryURL = "https://www.omdbapi.com/?t=" + searchTerm + "&y=&plot=short&apikey=trilogy";
 
-  // Creating an AJAX call for the specific movie button being clicked
-  $.ajax({
+  // Creating an AJAX call for the specific article search term
+    $.ajax({
     url: queryURL,
     method: "GET"
   }).then(function(response) {
