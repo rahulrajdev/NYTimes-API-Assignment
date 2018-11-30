@@ -14,7 +14,7 @@ header {
 }
 
 form {
-    margin-top: 40px;
+    margin: 40px;
 }
 
 input {
@@ -28,20 +28,23 @@ select {
     width: 100%;
 }
 
-option {
-    padding: 5px;
+.button {
+    padding: 15px;
+    background-color: lightgray;
+    width: 20%;
+    margin-right: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .section-bg {
     background-color: lightgray;
-    width: 100%;
-    height: 25px;
-
+    padding: 20px;
 }
 
 #search-container {
     width: 70%;
-    padding: 20px;
+    /* padding: 20px; */
     margin: auto;
     margin-top: 50px;
     border: 3px solid black;
@@ -49,7 +52,7 @@ option {
 
 #article-container {
     width: 70%;
-    padding: 20px;
+    /* padding: 20px; */
     margin: auto;
     margin-top: 50px;
     border: 3px solid black;
