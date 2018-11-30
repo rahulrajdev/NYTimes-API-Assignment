@@ -1,17 +1,20 @@
+$(document).ready(function(){
 
-//API call function
-function searchArticles() {
-    
+
+
+$("#search-button").on("click", function(){
+
+
   // Creating an AJAX call for the specific article search term
  var apiKey = "dcefdbf518e9494aa9bb2ec0d87c9bbf";
 
-  var beginDate = "20100115"; 
+  var beginDate = $("#startYear").val().trim();
     
-  var endDate = "20180115";
+  var endDate = $("#endYear").val().trim();
     
-  var numResults = "8";
-    
-  var searchTerm = "healthcare";
+  var numResults = "5";
+
+  var searchTerm = $("searchTerm").val().trim();
   
   var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?" + $.param({
      "api-key" : apiKey,  
@@ -32,7 +35,5 @@ function searchArticles() {
     throw err;
   });
 
-}
-
-//function call
-searchArticles();
+})
+});
