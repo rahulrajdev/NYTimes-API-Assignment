@@ -13,6 +13,25 @@ header {
     text-align: center;
 }
 
+form {
+    margin-top: 40px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px;
+}
+
+select {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+option {
+    padding: 5px;
+}
+
 .section-bg {
     background-color: lightgray;
     width: 100%;

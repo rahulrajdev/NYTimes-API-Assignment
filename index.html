@@ -17,13 +17,29 @@
     </header>
 
     <div id="search-container">
-        <div class="header">
+        <div class="section-bg">
             <h1>
                 Search Parameters
             </h1>
         </div>
-        <form>
+        <form id="search-form">
+            Search Term:<br>
+            <input type="text" name="search" value=""><br>
 
+            Number of records to retrieve:<br>
+            <select name="records" form="search-form">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br>
+
+            Start year (optional):<br>
+            <input type="text" name="start year" value=""><br>
+            
+            End year (optional):<br>
+            <input type="text" name="end year" value=""><br>
         </form>
     </div>
 
