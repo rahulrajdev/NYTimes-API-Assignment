@@ -31,6 +31,16 @@ $("#search-button").on("click", function(){
     method: 'GET',
   }).done(function(result) {
     console.log(result);
+    // var pages = result.response.docs;
+    
+
+    for (let i = 0; i < result.response.docs.length; i++) {
+      var url = result.response.docs[i].web_url
+      $("#article-container").prepend(url);
+      console.log(url);
+    }
+
+
   }).fail(function(err) {
     throw err;
   });
